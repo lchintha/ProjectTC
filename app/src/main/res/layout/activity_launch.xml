@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tcltd.corp.tradecrop.LaunchActivity"
+    android:id="@+id/mainLayout">
+
+    <ImageView
+        android:id="@+id/logoView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_s_your_number"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/we_ll_text_a_code_to_verify_your_phone"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="35dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/country_code"
+                        android:textSize="30sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"/>
+
+                    <EditText
+                        android:id="@+id/mobileNumberField"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/mobile_number"
+                        android:inputType="phone"
+                        android:layout_margin="10dp"
+                        android:textSize="30sp"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/toPinNumberScreen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/next"
+                    android:textSize="20sp"
+                    android:background="@drawable/button_background"
+                    android:layout_margin="15dp"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:translationX="500dp"
+            android:id="@+id/pinNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="20dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/what_s_the_code"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enter_the_code"
+                    android:textSize="18sp"
+                    android:textAlignment="center"/>
+
+                <EditText
+                    android:id="@+id/pinNumberField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pin_number"
+                    android:inputType="phone"
+                    android:layout_margin="20dp"
+                    android:textSize="30sp"
+                    android:layout_gravity="center_horizontal"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/toMobileNumberScreen"
+                        android:text="@string/back"
+                        android:textSize="20sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_weight="1"/>
+
+                    <Button
+                        android:id="@+id/toHomeScreen"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/next"
+                        android:onClick="verifyPhoneNumber"
+                        android:textSize="20sp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/button_background"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+</RelativeLayout>

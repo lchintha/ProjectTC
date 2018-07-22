@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.tcltd.corp.tradecrop"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //DesignSupport Library for RecyclerView and CardView
+    compile 'com.android.support:design:26.0.0'
+    compile 'com.android.support:cardview-v7:26.0.0'
+    compile 'com.android.support:recyclerview-v7:26.0.0'
+
+    //To Display Images
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:4.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.3.1'
+
+    //Butterknife to inject views
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //Retrofit to make network calls
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    //Dagger for dependency injection
+    compile 'com.google.dagger:dagger:2.11'
+    annotationProcessor "com.google.dagger:dagger-compiler:2.11"
+
+    //Firebase Backend
+    compile 'com.google.firebase:firebase-database:11.6.0'
+    compile 'com.google.firebase:firebase-storage:11.6.0'
+    compile 'com.google.firebase:firebase-auth:11.6.0'
+    compile 'com.google.firebase:firebase-messaging:11.6.0'
+    //compile 'com.google.firebase:firebase-crash:11.6.0'
+    compile 'com.google.firebase:firebase-firestore:11.6.0'
+
+    //Loding Dialog
+    compile 'com.github.d-max:spots-dialog:0.7@aar'
+
+    //Circle Image
+    compile 'de.hdodenhof:circleimageview:2.2.0'
+
+    //Picking color from image
+    implementation 'com.android.support:palette-v7:26.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

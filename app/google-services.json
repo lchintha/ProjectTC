@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "691927410947",
+    "firebase_url": "https://projecttc-dbltd.firebaseio.com",
+    "project_id": "projecttc-dbltd",
+    "storage_bucket": "projecttc-dbltd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:691927410947:android:cde2278118d09b8b",
+        "android_client_info": {
+          "package_name": "com.tcltd.corp.tradecrop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "691927410947-1lm4orivs592gam761bijb24oh1014g2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tcltd.corp.tradecrop",
+            "certificate_hash": "dfbec9622bb48edfbcb6eb8a3ce10871bb9947c4"
+          }
+        },
+        {
+          "client_id": "691927410947-ev97rvpaao440t52ok7l6fog741cu5f3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaYuqfqdfuhGBNCwNQNEROiJwgSOR2QnI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "691927410947-ev97rvpaao440t52ok7l6fog741cu5f3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

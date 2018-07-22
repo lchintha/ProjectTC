@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4CAF50</color>
+    <color name="colorPrimaryDark">#388E3C</color>
+    <color name="colorAccent">#512DA8</color>
+
+    <color name="nextButton">#FF9800</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!--Button Background color-->
+    <color name="buttonEndColor">#FFA726</color>
+    <color name="buttonCenterColor">#FFA726</color>
+    <color name="buttonStartColor">#EF6C00</color>
+
+    <!--Launch Screen Background-->
+    <color name="launchEndColor">#81C784</color>
+    <color name="launchCenterColor">#388E3C</color>
+    <color name="launchStartColor">#1B5E20</color>
+
+    <!--MainActivity Colors-->
+    <color name="mainActivityBackground">#9E9E9E</color>
+    <color name="mainActivityEndColor">#E0E0E0</color>
+    <color name="mainActivityCenterColor">#FAFAFA</color>
+    <color name="mainActivityStartColor">#BDBDBD</color>
+
+    <!--ItemsListActivity-->
+    <color name="scrimColor">#4D000000</color>
+
+</resources>

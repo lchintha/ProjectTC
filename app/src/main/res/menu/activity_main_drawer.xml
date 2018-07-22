@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_recent_orders"
+            android:icon="@mipmap/ic_history_black_24dp"
+            android:title="Recent Orders" />
+        <item
+            android:id="@+id/nav_track_order"
+            android:icon="@mipmap/ic_location_on_black_24dp"
+            android:title="Track Order" />
+        <item
+            android:id="@+id/nav_special_offers"
+            android:icon="@mipmap/ic_star_rate_black_18dp"
+            android:title="Special Offers" />
+    </group>
+
+    <item android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_favorites"
+                    android:icon="@mipmap/ic_favorite_black_18dp"
+                    android:title="Favorites" />
+                <item
+                    android:id="@+id/nav_settings"
+                    android:icon="@mipmap/ic_settings_black_18dp"
+                    android:title="Settings" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_feedback"
+                    android:icon="@mipmap/ic_feedback_black_18dp"
+                    android:title="Feedback" />
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@mipmap/ic_help_black_18dp"
+                    android:title="Help" />
+                <item
+                    android:id="@+id/nav_terms_conditions"
+                    android:icon="@mipmap/ic_info_black_18dp"
+                    android:title="Terms &amp; Conditions" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

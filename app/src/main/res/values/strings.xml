@@ -1,0 +1,27 @@
+<resources>
+
+    <!--LaunchActivity-->
+    <string name="app_name">TradeCrop</string>
+    <string name="next">Next</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="what_s_your_number">What\'s your number?</string>
+    <string name="what_s_the_code">What\'s the code?</string>
+    <string name="we_ll_text_a_code_to_verify_your_phone">We\'ll text a code to verify your phone</string>
+    <string name="country_code">+91</string>
+    <string name="pin_number">Pin Number</string>
+    <string name="enter_the_code">Enter the verification code</string>
+    <string name="back">Back</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--MainActivity-->
+    <string name="title_activity_main">Home</string>
+    <string name="vegetables">Vegetables</string>
+    <string name="pickles">Pickles</string>
+    <string name="fruits">Fruits</string>
+    <string name="dairy_products">Dairy Products</string>
+    <string name="sweets">Sweets</string>
+    <string name="grocery">Grocery</string>
+</resources>
